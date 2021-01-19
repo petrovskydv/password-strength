@@ -7,8 +7,10 @@ python-versions = "*"
 version = "2.0.1"
 
 [metadata]
-content-hash = "6809f50a881e549864e4f0d9f7105483107d36539a26672feae27397efe04d44"
-python-versions = "^3.7"
+content-hash = "970ac259d71c8d936f159bb568f18d8514a22aa1c6becb19a421511d7d05bdc5"
+python-versions = "^3.8"
 
-[metadata.hashes]
-urwid = ["644d3e3900867161a2fc9287a9762753d66bd194754679adb26aede559bcccbc"]
+[metadata.files]
+urwid = [
+    {file = "urwid-2.0.1.tar.gz", hash = "sha256:644d3e3900867161a2fc9287a9762753d66bd194754679adb26aede559bcccbc"},
+]
