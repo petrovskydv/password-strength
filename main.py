@@ -30,17 +30,16 @@ def doesnt_consist_of_symbols(password):
 
 
 def on_ask_change(edit, new_edit_text):
-    print(new_edit_text)
     score = 0
-    cheks_list = [is_very_long, has_digit, has_letters, has_upper_letters, has_lower_letters, has_symbols]
-    for chek in cheks_list:
-        if chek(new_edit_text):
+    password_checks = [is_very_long, has_digit, has_letters, has_upper_letters, has_lower_letters, has_symbols]
+    for password_check in password_checks:
+        if password_check(new_edit_text):
             score += 2
     print('Рейтинг этого пароля:', score)
 
 
 if __name__ == '__main__':
-    ask = urwid.Edit('Введите пароль: ')
+    ask = urwid.Edit('Введите пароль: ', mask='*')
     reply = urwid.Text("")
     menu = urwid.Pile([ask, reply])
     menu = urwid.Filler(menu, valign='top')
